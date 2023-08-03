@@ -1,0 +1,5 @@
+[
+  { "label": "Games", "value": "games" },
+  { "label": "Collectibles", "value": "collectibles" },
+  { "label": "Virtual World", "value": "virtual_world" }
+]

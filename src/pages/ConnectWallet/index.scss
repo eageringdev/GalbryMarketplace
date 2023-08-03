@@ -1,0 +1,47 @@
+.connect_wallet_container {
+  background-color: #000000;
+  padding: 48px 48px 8px 48px;
+  // border: 2px solid #4a4a4a;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: -48px;
+}
+
+.connect_wallet_bottom_container {
+  background-color: #000000;
+  // border: 2px solid #4a4a4a;
+  border-radius: 0px 0px 10px 10px;
+  padding: 12px 24px 24px 24px;
+}
+
+.connect_wallet_divider {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  height: 1px;
+}
+
+.connect_wallet_logo_container {
+  text-align: center;
+}
+
+// .connect_wallet_logo {
+//   background: rgb(0, 8, 20);
+//   border-radius: 50%;
+//   border: 2px solid #4a4a4a;
+// }
+
+.connect_wallet_content {
+  margin: 32px;
+}
+
+@media only screen and (max-width: 575px) {
+  .connect_wallet_content {
+    margin: 16px 4px 24px 4px;
+  }
+  .connect_wallet_container {
+    padding: 36px 24px 8px 24px;
+  }
+}

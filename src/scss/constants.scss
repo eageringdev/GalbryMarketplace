@@ -1,0 +1,40 @@
+// sidebar constants
+$sidebar_width: 60px;
+$sidebar_background_color: #1c1c1c;
+$sidebar_active_item_background_color: #484848;
+$sidebar_z_index: 3;
+
+// header constants
+$header_height: 132px;
+$header_z_index: 2;
+$header_background_color: #161519;
+
+// common
+$primary_red: #d90a2c;
+$primary_background_color: #161519;
+$secondary_background_color: #333333;
+
+@mixin hover_underline_animation($color) {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $color;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@function get-vw($target) {
+  $vw-context: (1000 * 0.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}

@@ -1,0 +1,45 @@
+.explore_advertisement {
+  margin-top: 48px;
+  border: 1px solid #2f2e2e;
+  border-radius: 10px;
+}
+
+.carousel_item {
+  min-height: 216px;
+  max-height: 250px;
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  height: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.carousel_item_description {
+  align-self: center;
+  .title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 42px;
+    color: white;
+    text-align: left;
+    max-width: 400px;
+  }
+  .description {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.67);
+    text-align: left;
+    width: 400px;
+  }
+}
+
+.advertisement_image {
+  border-radius: 10px;
+  max-width: 200px;
+  // box-shadow: 0 0 8px #c9d4e9;
+}

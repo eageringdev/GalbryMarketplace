@@ -1,0 +1,42 @@
+@import "@/scss/constants.scss";
+
+.search_filters_section {
+  color: white;
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search_filters_panel {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+//search assets input
+.search_filter_input_container {
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 8px 18px;
+  // border: 1px solid #b7b7b7;
+  // border-radius: 10px;
+  font-size: 18px;
+}
+.search_filter_input_icon {
+  color: rgba(255, 255, 255, 0.4);
+  margin-right: 4px;
+}
+.search_filter_input {
+  background-color: transparent;
+  color: white;
+}
+
+.search_filter_input,
+.search_filter_input:hover,
+.search_filter_input:focus,
+.search_filter_input:active {
+  border: none;
+  outline: none;
+}

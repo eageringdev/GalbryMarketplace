@@ -1,0 +1,27 @@
+@import "@/scss/constants.scss";
+
+.dropzone_container {
+  border: 2px dashed #786c6c;
+  border-radius: 10px;
+  padding: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone_file_container {
+  border: 1px solid #4a4a4a;
+  border-radius: 10px;
+  color: white;
+  padding: 18px;
+  .error {
+    color: $primary_red;
+  }
+}
+
+.dropzone_file_container.has_error {
+  border: 1px solid $primary_red;
+}
+
+.dropzone_text {
+  font-size: 20px;
+}

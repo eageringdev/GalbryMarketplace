@@ -1,0 +1,18 @@
+.primary_button {
+  color: white;
+  background-color: #e02e2e;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.primary_button.disabled {
+  opacity: 0.4;
+  cursor: auto;
+}
+
+// .primary_button:hover:not(.disabled) {
+//   box-shadow: 0px 0px 2px 2px #e7a3a3;
+// }

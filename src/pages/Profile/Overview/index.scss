@@ -1,0 +1,37 @@
+@import "@/scss/constants.scss";
+
+.address_section {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #131313;
+  border-radius: 10px;
+}
+
+.profile_setting_button {
+  background-color: #131313;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+// custom combo box
+
+.profile_primary_combo_box_container {
+  background-color: #131313;
+  border-radius: 10px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+// .profile_primary_combo_box_container:hover {
+//   box-shadow: 0px 0px 2px 2px #bbb6b6;
+// }

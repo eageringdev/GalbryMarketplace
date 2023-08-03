@@ -1,0 +1,59 @@
+@import "@/scss/constants.scss";
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $sidebar_width;
+  height: 100vh;
+  // background-color: $sidebar_background_color;
+  background-color: transparent;
+  transition: 0.5s;
+  z-index: $sidebar_z_index;
+}
+
+.sidebar_toggle {
+  transition: 0.5s;
+  z-index: $sidebar_z_index;
+  position: fixed;
+  top: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sidebar_toggle:hover {
+  color: #aaaaaa;
+}
+
+.sidebar {
+  .sidebar_nav {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 24px 6px 24px 6px;
+    border-radius: 8px;
+    overflow-y: auto;
+    background-color: $sidebar_background_color;
+  }
+  .sidebar_item {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    padding: 16px 6px 16px 6px;
+  }
+  .sidebar_icon {
+    padding: 6px;
+    color: #333333 !important;
+    transition: 0.3s;
+  }
+  .sidebar_icon:hover {
+    color: #aaaaaa;
+  }
+  .active .sidebar_icon {
+    background-color: $sidebar_active_item_background_color;
+    border-radius: 8px;
+    color: $primary_red;
+  }
+}

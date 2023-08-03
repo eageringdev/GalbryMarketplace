@@ -1,0 +1,17 @@
+@import "@/scss/constants.scss";
+
+.profile_setting_controls_container {
+  background-color: #131313;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.avatar_reset_button {
+  color: $primary_red;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.avatar_reset_button:hover {
+  opacity: 0.6 !important;
+}

@@ -1,0 +1,188 @@
+@import "scss/constants.scss";
+
+html {
+  font-family: Montserrat !important;
+}
+
+body {
+  background-color: $primary_background_color !important;
+  font-family: Montserrat !important;
+  font-size: 14px !important;
+}
+
+// scroll bar
+/* width */
+::-webkit-scrollbar {
+  background-color: #33343e;
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #33343e;
+  box-shadow: 0 0 3px #2e2f31;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #4f5055;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #717278;
+}
+
+// carousel modify
+.carousel.carousel-slider {
+  z-index: 0 !important;
+}
+
+// overlay
+.overlay_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.overlay_content {
+  transition: 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.overlay_container:hover {
+  opacity: 0.8;
+}
+
+.overlay_container:hover .overlay {
+  opacity: 0.8;
+}
+
+// copy icon animation
+.copy_icon {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.copy_icon:active {
+  color: rgb(24, 173, 241) !important;
+  transform: scale(2);
+}
+
+.top_back_link {
+  @include hover_underline_animation(rgb(194, 194, 194));
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: fit-content;
+  padding: 0px 8px 0px 8px;
+}
+
+.dropdown-toggle.has_error {
+  border: 1px solid $primary_red;
+}
+
+// inputs
+
+.primary_input {
+  background-color: #484848;
+  border-radius: 10px;
+  padding: 12px 20px 12px 20px;
+  color: white;
+}
+
+.primary_input,
+.primary_input:hover,
+.primary_input:focus,
+.primary_input:active {
+  border: none;
+  outline: none;
+}
+
+.primary_input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.primary_input_error {
+  color: $primary_red;
+}
+
+.primary_input.has_error {
+  border: 1px solid $primary_red;
+}
+
+.secondary_input {
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 12px 20px 12px 20px;
+  color: white;
+}
+
+.secondary_input,
+.secondary_input:hover,
+.secondary_input:focus,
+.secondary_input:active {
+  border: none;
+  outline: none;
+}
+
+.secondary_input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section_title {
+  font-size: 18px;
+  color: white;
+}
+
+.divider {
+  background-color: #474b58;
+  height: 1px;
+}
+
+.control_field {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  .label {
+    color: white;
+    margin-bottom: 8px;
+  }
+}
+
+// badge
+
+.primary_badge {
+  padding: 8px 12px 8px 12px;
+  background-color: #50515a;
+  border-radius: 10px;
+  color: white;
+}
+
+//tab
+
+.tab_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .tab {
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+    padding: 0px 24px 18px 24px;
+  }
+  .tab.active {
+    border-bottom-color: #d90a2c;
+  }
+}
+
+// dropdown

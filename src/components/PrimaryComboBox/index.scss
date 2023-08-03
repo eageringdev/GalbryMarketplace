@@ -1,0 +1,62 @@
+@import "@/scss/constants.scss";
+
+.primary_combo_box_container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+// .primary_combo_box_container:hover {
+//   box-shadow: 0px 0px 2px 2px #bbb6b6;
+// }
+
+.primary_combo_box {
+  .dropdown-menu {
+    background-color: #23242a;
+    color: white;
+    padding: 16px 16px 8px 16px;
+  }
+  .primary_combo_box_item_container {
+    overflow-y: auto;
+    max-height: 280px;
+  }
+  .primary_combo_box_item {
+    @include hover_underline_animation(rgb(194, 194, 194));
+    cursor: pointer;
+    opacity: 0.4;
+    margin-bottom: 8px;
+  }
+  .active {
+    opacity: 1;
+  }
+
+  // search input
+  .primary_combo_box_search_input_container {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 18px;
+  }
+  .primary_combo_box_search_input_icon {
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 4px;
+  }
+  .primary_combo_box_search_input {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .primary_combo_box_search_input,
+  .primary_combo_box_search_input:hover,
+  .primary_combo_box_search_input:focus,
+  .primary_combo_box_search_input:active {
+    border: none;
+    outline: none;
+  }
+}

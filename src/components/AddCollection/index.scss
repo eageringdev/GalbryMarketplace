@@ -1,0 +1,22 @@
+@import "@/scss/constants.scss";
+
+.add_collection_container {
+  background-color: $secondary_background_color;
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.close_button_container {
+  float: right;
+  position: absolute;
+  top: 48px;
+  right: 24px;
+}
